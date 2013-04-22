@@ -107,20 +107,21 @@
     UIImage *img = [UIImage imageNamed:@"bg_circle.png"];
 	CGContextDrawImage(context,self.bounds,img.CGImage);
     
-    CGFloat viewW = self.bounds.size.width;
-    CGFloat viewH = self.bounds.size.height;
-    
-    img = [UIImage imageNamed:@"bg_point.png"];
-    CGFloat w = img.size.width;
-    CGFloat h = img.size.height;
-    CGRect Rect =  CGRectMake((viewW - w)/2.0,(viewH -h)/2.0 + 60,w,h);
-	CGContextDrawImage(context,Rect,img.CGImage);
-    
-    img = [UIImage imageNamed:@"bg_center.png"];
-    w = img.size.width;
-    h = img.size.height;
-    Rect =  CGRectMake((viewW - w)/2.0,(viewH -h)/2.0,w,h);
-	CGContextDrawImage(context,Rect,img.CGImage);
+# pragma mark - code below is not effect.
+//    CGFloat viewW = self.bounds.size.width;
+//    CGFloat viewH = self.bounds.size.height;
+//    
+//    img = [UIImage imageNamed:@"bg_point.png"];
+//    CGFloat w = img.size.width;
+//    CGFloat h = img.size.height;
+//    CGRect Rect =  CGRectMake((viewW - w)/2.0,(viewH -h)/2.0 + 60,w,h);
+//	CGContextDrawImage(context,Rect,img.CGImage);
+//    
+//    img = [UIImage imageNamed:@"bg_center.png"];
+//    w = img.size.width;
+//    h = img.size.height;
+//    Rect =  CGRectMake((viewW - w)/2.0,(viewH -h)/2.0,w,h);
+//	CGContextDrawImage(context,Rect,img.CGImage);
 
     CGContextRestoreGState(context);
 }
